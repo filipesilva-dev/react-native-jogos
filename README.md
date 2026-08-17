@@ -1,119 +1,150 @@
-# 🎮 React Native Jogos
+# 🎮 React Native — Jogos
 
-Coleção de jogos simples desenvolvidos com **React Native** e **Expo** como projeto acadêmico.
+Coleção de projetos desenvolvidos com **React Native**, **TypeScript** e **Expo** para fins acadêmicos.
 
-O projeto tem como objetivo praticar conceitos de desenvolvimento multiplataforma, componentes, estilização e organização de aplicações utilizando React Native.
+O repositório contém implementações independentes de jogos, além de uma aplicação que reúne os três jogos em um único projeto.
 
-## 🕹️ Jogos
+## 🕹️ Projetos
 
-### ❌ Jogo da Velha
-
-Jogo clássico para dois jogadores em um tabuleiro 3×3.
-
-### 🔤 Jogo da Forca
-
-Jogo de palavras em que o jogador deve descobrir a palavra secreta escolhendo letras.
-
----
-
-## 📱 Plataformas
-
-A aplicação pode ser executada em:
-
-* Android
-* iOS
-* Web
-
-O projeto utiliza **Expo** para facilitar o desenvolvimento e execução em diferentes plataformas.
+| Projeto             | Descrição                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------- |
+| 🔤 **Forca**        | Jogo de palavras em que o jogador deve descobrir a palavra secreta escolhendo letras. |
+| ❌ **Jogo da Velha** | Jogo clássico para dois jogadores em um tabuleiro 3×3.                                |
+| 🟦 **Quadrados**    | Jogo baseado em interação com quadrados na tela.                                      |
+| 🎮 **My App**       | Aplicação que reúne os três jogos em um único projeto.                                |
 
 ---
 
-## 🛠️ Tecnologias
+## 📂 Estrutura do repositório
 
-| Tecnologia   | Utilização                      |
-| ------------ | ------------------------------- |
-| React Native | Desenvolvimento da interface    |
-| TypeScript   | Tipagem e desenvolvimento       |
-| Expo         | Desenvolvimento multiplataforma |
-| JavaScript   | Lógica da aplicação             |
-| Git          | Controle de versão              |
-| GitHub       | Hospedagem do projeto           |
-
----
-
-## 📂 Estrutura
+Cada jogo possui seu próprio projeto **Expo**, com suas próprias dependências e configurações.
 
 ```text
-react-native-jogos/
+reactive-animais/
 │
-├── assets/
-│   └── img/
+├── forca/
+│   ├── assets/
+│   ├── App.tsx
+│   ├── app.json
+│   ├── index.ts
+│   ├── package.json
+│   ├── package-lock.json
+│   └── tsconfig.json
 │
-├── src/
-│   ├── backHome.tsx
-│   ├── forca.tsx
-│   ├── jogoDaVelha.tsx
-│   └── quadrados.tsx
+├── jogoDaVelha/
+│   ├── assets/
+│   ├── App.tsx
+│   ├── app.json
+│   ├── index.ts
+│   ├── package.json
+│   ├── package-lock.json
+│   └── tsconfig.json
 │
-├── App.tsx
-├── app.json
-├── package.json
-├── package-lock.json
-└── tsconfig.json
+├── quadrados/
+│   ├── assets/
+│   ├── App.tsx
+│   ├── app.json
+│   ├── index.ts
+│   ├── package.json
+│   ├── package-lock.json
+│   └── tsconfig.json
+│
+├── my-app/
+│   ├── assets/
+│   ├── src/
+│   ├── App.tsx
+│   ├── app.json
+│   ├── index.ts
+│   ├── package.json
+│   ├── package-lock.json
+│   └── tsconfig.json
+│
+└── README.md
 ```
+
+> As pastas `forca`, `jogoDaVelha` e `quadrados` são projetos independentes. A pasta `my-app` contém a aplicação integrada com os três jogos.
 
 ---
 
 ## 🚀 Como executar
 
-### 1. Clone o repositório
+Como cada pasta é um projeto Expo independente, é necessário instalar as dependências dentro do projeto que deseja executar.
+
+### 🔤 Forca
 
 ```bash
-git clone https://github.com/filipesilva-dev/react-native-jogos.git
-```
-
-### 2. Acesse o projeto
-
-```bash
-cd react-native-jogos
-```
-
-### 3. Instale as dependências
-
-```bash
+cd forca
 npm install
-```
-
-### 4. Inicie o Expo
-
-```bash
 npx expo start
 ```
 
-Após iniciar, escolha a plataforma desejada:
+### ❌ Jogo da Velha
 
-```text
-a → Android
-w → Web
-i → iOS
+```bash
+cd jogoDaVelha
+npm install
+npx expo start
 ```
 
-Também é possível utilizar o **Expo Go** para executar o projeto em um dispositivo físico.
+### 🟦 Quadrados
+
+```bash
+cd quadrados
+npm install
+npx expo start
+```
+
+### 🎮 Aplicação integrada
+
+Para executar a aplicação que reúne os três jogos:
+
+```bash
+cd my-app
+npm install
+npx expo start
+```
 
 ---
 
-## 🎯 Objetivos do projeto
+## 📱 Plataformas
 
-O projeto foi desenvolvido para praticar:
+Os projetos podem ser executados utilizando o **Expo** nas seguintes plataformas:
+
+* Android
+* iOS
+* Web
+
+Também é possível utilizar o **Expo Go** em um dispositivo físico compatível.
+
+---
+
+## 🛠️ Tecnologias
+
+| Tecnologia       | Utilização                                 |
+| ---------------- | ------------------------------------------ |
+| **React Native** | Desenvolvimento das interfaces             |
+| **TypeScript**   | Tipagem e desenvolvimento                  |
+| **Expo**         | Execução e desenvolvimento multiplataforma |
+| **JavaScript**   | Lógica das aplicações                      |
+| **Git**          | Controle de versão                         |
+| **GitHub**       | Hospedagem do código                       |
+
+---
+
+## 🎯 Objetivos
+
+O projeto foi desenvolvido para praticar conceitos de:
 
 * Desenvolvimento com React Native
 * TypeScript
 * Componentização
 * `StyleSheet`
-* Layouts com Flexbox
+* Flexbox
+* Interfaces para dispositivos móveis
+* Desenvolvimento para Web
 * Desenvolvimento multiplataforma
 * Organização de projetos
-* Desenvolvimento de interfaces para jogos
+* Criação de interfaces para jogos
 
 ---
 
@@ -121,12 +152,11 @@ O projeto foi desenvolvido para praticar:
 
 **Filipe Silva**
 
-GitHub:
-https://github.com/filipesilva-dev
+[GitHub — filipesilva-dev](https://github.com/filipesilva-dev?utm_source=chatgpt.com)
 
 ## 🔗 Repositório
 
-https://github.com/filipesilva-dev/react-native-jogos
+[react-native-jogos](https://github.com/filipesilva-dev/react-native-jogos?utm_source=chatgpt.com)
 
 ---
 
